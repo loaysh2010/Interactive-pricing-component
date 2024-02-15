@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BoxIcons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/cd8f804e8b.js" crossorigin="anonymous"></script>
+    <!--Local Style-->
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive pricing component</title>
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="heading">
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </div>
+        <div class="box">
+            <div class="top-text">
+                <div class="views"><span class="views-value">100k</span><span>Pageviews</span> </div>
+                <div class="slidebar">
+                    <input type="range" min="1" max="200" value="100" class="slider" id="myRange">
+                    <span class="backcolor"></span>
+                </div>
+                <div class="price"><span class="price-value">$16.00</span><span>/month</span></div>
+            </div>
+            <!--switch-->
+            <div class="price-switcher-wrapper">
+                <label for="price-switcher" class="annually">Monthly Billing</label>
+                <input type="checkbox" id="price-switcher" class="price-switcher">
+                <label for="price-switcher" class="monthly">Yearly Billing</label>
+                <!-- <span data-full="25% discount" data-percent="25%"></span> -->
+            </div>
+
+            <div class="bottom-text">
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Unlimited websites</li>
+                    <li><i class="fa-solid fa-check"></i>100% data ownership</li>
+                    <li><i class="fa-solid fa-check"></i>Email reports</li>
+                </ul>
+                <button>Start my trial</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
